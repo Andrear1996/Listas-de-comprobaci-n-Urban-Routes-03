@@ -1,0 +1,67 @@
+"Casos de prueba y pruebas: la lógica del botón ""Reservar""",,,,,,,,
+,,,,,,,,
+ID del caso de prueba,Nombre del caso de prueba,Precondiciones,Número de pasos,Descripción de los pasos,Resultado esperado,Versión,Estado,Enlace al informe de errores
+PR-0,"Comprobación de la lógica del botón de reserva al rellenar todos los campos obligatorios del formulario de reserva.
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón Reservar",1,Agregar licencia de conducir,"Texto en el botón ""Reservar""
+El recorrido será de ... kilómetros y se hará en ... minutos
+
+Al hacer clic en el botón, se abre la ventana ""Automóvil reservado""
+","Firefox
+1920x1080
+",APROBADO,
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PR-1,"Comprobación de la lógica del botón de reserva al rellenar todos los campos obligatorios del formulario de reserva, excepto el de la licencia de conducir
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón Reservar",1,Agregar tarjeta bancaria,"Texto en el botón ""Agregar licencia de conducir y reservar""
+El recorrido será de ... kilómetros y se hará en ... minutos
+
+Al hacer clic en el botón aparece la ventana ""Licencia de conducir agregada""","Firefox
+1920x1080",NO APROBADO, https://andrea-del-pilar19.atlassian.net/browse/PR-1?atlOrigin=eyJpIjoiM2RjN2EzZmE0NzdjNDgxMDgyZjk1ZjIyY2Q2NmY2MGIiLCJwIjoiaiJ9
+,,,3,Hacer clic en el botón de reserva,,,,
+PR-2,"Comprobación de la lógica del botón de reserva al rellenar todos los campos obligatorios del formulario de reserva, excepto el método de pago
+","1. Ir al banco de pruebas
+2. Ingresar ""East 2nd Street, 601"" en el campo Desde
+3. Ingresar ""1300 1st ST"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón Reservar",1,Agregar la licencia de conducir,"Texto en el botón ""Agregar método de pago y reservar""
+El recorrido será de ... kilómetros y se hará en ... minutos
+
+Al hacer clic en el botón, aparece la ventana ""Tarjeta agregada""
+","Firefox
+1920x1080",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PR-2?atlOrigin=eyJpIjoiM2ZlNDU5Nzk5MWI3NGRkZGI1OWNlOTY1ZWFiZDAzYzYiLCJwIjoiaiJ9
+,,,3,Hacer clic en el botón de reserva,,,,
+PR-3,"Comprobación de la lógica del botón de reserva al rellenar todos los campos obligatorios del formulario de reserva y se han borrado las direcciones
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón Reservar",1,Agregar licencia de conducir,"Texto en el botón ""Reservar""
+
+Al hacer clic en el botón, se abre la ventana ""Automóvil reservado""
+","Firefox
+1920x1080",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PR-3?atlOrigin=eyJpIjoiMDE2OTE4MDE0NTM2NDU1NThhZTZkNGIxYTA1N2VmNGQiLCJwIjoiaiJ9
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Borrar las direcciones ,,,,
+,,,4,Hacer clic en el botón de reserva,,,,
+PR-4,Comprobación de la lógica del botón de reserva cuando no se ha completado ninguno de los campos obligatorios y se han borrado las direcciones,"1. Ir al banco de pruebas
+2. Ingresar ""East 2nd Street, 601"" en el campo Desde
+3. Ingresar ""1300 1st ST"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón Reservar",1,Borrar las direcciones ,"Texto en el botón ""Agregar licencia de conducir y reservar""
+
+Al hacer clic en el botón aparece la ventana ""Agregar licencia de conducir""","Firefox
+1920x1080",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PR-4?atlOrigin=eyJpIjoiMzIxZWNmZjE4NjQ4NGNmNjk3NTQzZWQ3YjMyMzQwMWQiLCJwIjoiaiJ9
+,,,2,Hacer clic en el botón de reserva,,,,

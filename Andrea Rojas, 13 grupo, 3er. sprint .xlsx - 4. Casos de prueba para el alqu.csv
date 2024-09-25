@@ -1,0 +1,72 @@
+Casos de prueba y pruebas: la lógica de las funciones de reserva,,,,,,,,
+,,,,,,,,
+ID del caso de prueba,Nombre del caso de prueba,Precondiciones,Número de pasos,Descripción de los pasos,Resultado esperado,Versión,Estado,Enlace al informe de errores
+PFR-1,"Comprobación de la lógica de la reserva al rellenar los campos Desde y Hasta
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".
+",1,Agregar licencia de conducir,"En el centro de la pantalla aparecerá una ventana con el título ""Automóvil reservado"". En su interior se encuentra la marca, número de placa, ícono y dirección del vehículo, así como el costo del trayecto y el temporizador que muestra el tiempo de espera gratuito.","Google Chrome:
+800x600
+",APROBADO,
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PFR-2,"Comprobación de la lógica de la reserva al rellenar completamente los campos Desde y Hasta
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".
+",1,Agregar licencia de conducir,"Si los campos ""Desde"" y ""Hasta"" están completados, aparecerá el precio exacto del trayecto","Google Chrome:
+800x600
+",APROBADO,
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PFR-3,"Comprobación de la lógica de la reserva al rellenar los campos Desde y Hasta de manera incompleta
+","1. Ir al banco de pruebas
+2. Ingresar ""East 2nd Street, 601"" en el campo Desde
+3. Ingresar ""1300 1st ST"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".",1,Agregar licencia de conducir,"Si los campos ""Desde"" y ""Hasta"" están incompletados, aparecerá el precio por minuto","Google Chrome:
+800x600
+",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PFR-3?atlOrigin=eyJpIjoiNjc0ZTRjYWU4MDEzNDQ4YWFlNjU5YjhjYjQ2ZjE1MWIiLCJwIjoiaiJ9
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PFR-4,"Comprobación de la lógica del temporizador al rellenar los campos Desde y Hasta
+","1. Ir al banco de pruebas
+2. Ingresar ""East 2nd Street, 601"" en el campo Desde
+3. Ingresar ""1300 1st ST"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".",1,Agregar licencia de conducir,El temporizador comienza a contar el tiempo de espera gratuito desde el momento en que el usuario o usuaria hace clic en el campo reservar,"Google Chrome:
+800x600",APROBADO,
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PFR-5,"Comprobación de la lógica de cancelación  al rellenar los campos Desde y Hasta
+","1. Ir al banco de pruebas
+2. Ingresar ""1917 Bay St"" en el campo Desde
+3. Ingresar ""615 S Broadway"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".
+",1,Agregar licencia de conducir,"Mientras el temporizador está activado, el usuario o usuaria puede cancelar el viaje de forma gratuita.
+","Google Chrome:
+800x600
+",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PFR-5?atlOrigin=eyJpIjoiMjU1MGIwZmY2ODIxNGU4YmE3Nzg5N2NmZDJmOTE1YmYiLCJwIjoiaiJ9
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
+PFR-6,"Comprobación de la lógica del tiempo de uso compartido del vehículo al rellenar los campos Desde y Hasta
+","1. Ir al banco de pruebas
+2. Ingresar ""East 2nd Street, 601"" en el campo Desde
+3. Ingresar ""1300 1st ST"" en el campo Hasta
+4. Elegir el modo Personal
+5. Elegir Automóvil compartido como el tipo de transporte
+6. Hacer clic en el botón ""Reservar"".",1,Agregar licencia de conducir,"En cuanto el tiempo de espera gratuito se agote, el temporizador comenzará a contar el tiempo de uso compartido del vehículo.","Google Chrome:
+800x600
+",NO APROBADO,https://andrea-del-pilar19.atlassian.net/browse/PFR-6?atlOrigin=eyJpIjoiOWU4NWNiNGRlMmI3NGZlYWFiZTE0MDQ1ZDA5Y2U0NjIiLCJwIjoiaiJ9
+,,,2,Agregar tarjeta bancaria,,,,
+,,,3,Hacer clic en el botón de reserva,,,,
